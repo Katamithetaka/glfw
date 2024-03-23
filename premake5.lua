@@ -81,7 +81,9 @@ project "GLFW"
 				"src/xkb_unicode.c",
                 "src/glx_context.c",
 				"src/linux_joystick.h",
-				"src/linux_joystick.c"
+				"src/linux_joystick.c",
+				"src/posix_poll.h",
+				"src/posix_poll.c"
 			}
 		end
 

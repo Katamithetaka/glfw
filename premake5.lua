@@ -1,11 +1,13 @@
+---@diagnostic disable: undefined-global
+
 project "GLFW"
 	kind "StaticLib"
 	language "C"
 	staticruntime "off"
 	warnings "off"
-
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	location "."
+	targetdir (_WORKING_DIR .. "/build/bin/" .. outputdir .. "/%{prj.name}")
+	objdir (_WORKING_DIR .. "/build/obj/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
